@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/homePage"
+    tools:context=".ui.home.HomeFragment">
+
+    <TextView
+        android:id="@+id/textitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Add Tasks"
+        android:textAlignment="center"
+        android:textSize="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/Descripcion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/Descripcion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:hint="Descripcion"
+        android:visibility="visible"
+        app:layout_constraintTop_toBottomOf="@+id/textitle"
+        tools:layout_editor_absoluteX="16dp"
+        tools:visibility="visible" />
+
+    <EditText
+        android:id="@+id/fechaInicio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:focusable="false"
+        android:clickable="true"
+        android:hint="Fecha de entrega"
+        app:layout_constraintTop_toBottomOf="@+id/Descripcion"
+        tools:layout_editor_absoluteX="32dp"></EditText>
+
+    <EditText
+        android:id="@+id/Autores"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="Autores"
+        app:layout_constraintTop_toBottomOf="@+id/fechaInicio"
+        tools:layout_editor_absoluteX="16dp"></EditText>
+
+    <EditText
+        android:id="@+id/Materia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="Materia"
+        app:layout_constraintTop_toBottomOf="@+id/Autores"
+        tools:layout_editor_absoluteX="0dp"></EditText>
+
+    <Button
+        android:id="@+id/bottomAdd"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="52dp"
+        android:text="Agregar"
+        android:background="@color/blue_lsv3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Materia" />
+
+    <Button
+        android:id="@+id/bottomCancel"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="52dp"
+        android:background="@color/blue_lsv3"
+        android:baselineAligned="false"
+        android:text="Cancelar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Materia" />
+
+
+</LinearLayout>

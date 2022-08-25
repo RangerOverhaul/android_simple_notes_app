@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/onlygal"
+    android:layout_height="match_parent"
+    tools:context=".ui.gallery.GalleryFragment">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="clip_vertical"
+        android:layout_marginBottom="50dp"
+        android:id="@+id/contededor1">
+
+    <TextView
+        android:id="@+id/Listittle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="List Of Tasks"
+        android:layout_centerHorizontal="true"
+        android:textSize="32dp"></TextView>
+
+        <ListView
+            android:id="@+id/ListTask"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Listittle"
+            android:dividerHeight="1px"
+            android:divider="?android:attr/colorEdgeEffect"
+            android:listSelector="@android:color/holo_blue_light"
+            android:headerDividersEnabled="true"
+            android:outlineAmbientShadowColor="@color/teal_200"
+            android:scrollbarStyle="outsideOverlay"></ListView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/contededor2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="5dp"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="4px"
+        tools:ignore="Deprecated">
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_alignParentLeft="true"
+            android:text="UPLOAD TO COULD"></com.google.android.material.button.MaterialButton>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_alignParentRight="true"
+            android:text="     DELETE ALL     "></com.google.android.material.button.MaterialButton>
+    </RelativeLayout>
+
+</FrameLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/LogPage"
+    tools:context=".ui.slideshow.SlideshowFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/logtitle"
+            android:layout_height="wrap_content"
+            android:hint="Autenticacion"
+            android:textAlignment="center"
+            android:textSize="26dp"
+            ></TextView>
+        <EditText
+            android:id="@+id/logMail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="Email"
+            android:textSize="16dp"></EditText>
+
+        <EditText
+            android:id="@+id/logPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textSize="16dp"></EditText>
+        <Button
+            android:id="@+id/bottomSig"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="12dp"
+            android:textColor="@color/white"
+            android:text="SingIn"
+            android:background="@color/blue_lsv3"
+            />
+        <Button
+            android:id="@+id/bottomLog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="12dp"
+            android:textColor="@color/white"
+            android:text="SingUp"
+            android:background="@color/blue_lsv3"
+            />
+        <Button
+            android:id="@+id/bottomOUT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:text="LogOut"
+            android:layout_marginTop="12dp"
+            android:background="@color/blue_lsv3"
+            />
+
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.gallery.DetailTask">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/ediTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="Edit Tasks"
+            android:textAlignment="center"
+            android:textSize="40dp"
+            tools:ignore="RtlCompat" />
+        <TextView
+            android:id="@+id/numberTask"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="Tasks"
+            android:textAlignment="center"
+            android:textSize="25dp"
+            tools:ignore="RtlCompat" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_vertical"
+        android:layout_marginBottom="20dp">
+        <EditText
+            android:id="@+id/editDescripcion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="44dp"
+            android:hint="Descripcion"
+            android:visibility="visible"
+            tools:layout_editor_absoluteX="16dp"
+            android:textSize="16dp" />
+
+        <EditText
+            android:id="@+id/editFechaInicio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:focusable="false"
+            android:clickable="true"
+            android:hint="Fecha de entrega"
+            android:textSize="16dp"></EditText>
+
+        <EditText
+            android:id="@+id/editAutores"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="Autores"
+            android:textSize="16dp"></EditText>
+
+        <EditText
+            android:id="@+id/editMateria"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="Materia"
+            android:textSize="16dp"></EditText>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="vertical">
+        <Button
+            android:id="@+id/bottomAdd"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="12dp"
+            android:text="Guardar"
+            android:textColor="@color/white"
+            android:background="@color/blue_lsv3"
+            />
+        <Button
+            android:id="@+id/bottomDelete"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="12dp"
+            android:background="@color/blue_lsv3"
+            android:baselineAligned="false"
+            android:textColor="@color/white"
+            android:text="Eliminar" />
+        <Button
+            android:id="@+id/bottomCancel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="12dp"
+            android:background="@color/blue_lsv3"
+            android:baselineAligned="false"
+            android:textColor="@color/white"
+            android:text="Cancelar" />
+
+    </LinearLayout>
+
+</FrameLayout>
