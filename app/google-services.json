@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "145088855234",
+    "project_id": "lsvapp",
+    "storage_bucket": "lsvapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:145088855234:android:714249f346ffb8d0ac4f5b",
+        "android_client_info": {
+          "package_name": "com.example.testapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "145088855234-v4fob1q7h00tp07eid3t0t7id7et2u66.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCw1lu-unOR-B3xYul7KYLUjnmQTrMcWBM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "145088855234-v4fob1q7h00tp07eid3t0t7id7et2u66.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
